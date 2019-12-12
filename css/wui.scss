@@ -1,1 +1,62 @@
 *{padding: 0;margin: 0;}
+;
+@function vw($px){
+    // 下面的375的数字，就是你的设计图是宽度是多少就写多少
+    @return ($px / 375) * 100vw;
+}
+
+// 底部
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    height: vw(60);
+    .footer-nav{
+        background: #000;
+        height: 100%;
+        display: flex;
+        li{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items:  center;
+            justify-content: center;
+            a{
+                color: #fff;
+                font-size: vw(16);
+                margin-bottom: 6px;
+            }
+            span{
+                color: #fff;
+                font-size: vw(12);
+            }
+        }
+    }
+}
+
+// 头部（有简单搜索框的）
+.header-search{
+    // 在设计图中，你量出来的高度是多少就写多少
+    height: vw(60);
+    background: #58bc58;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .search{
+        width: 90%;
+        height: 60%;
+        background: #fff;
+        border:  none;
+        border-radius: 6px;
+        outline: none;
+        font-size: vw(18);
+        padding: 0px vw(10);
+    }
+}
+
+// 头部（左中右布局布局的）
