@@ -36,6 +36,18 @@ footer .footer-nav li span {
   font-size: 3.2vw;
 }
 
+footer .footer-nav .active {
+  background: #fff;
+}
+
+footer .footer-nav .active a {
+  color: #aaa;
+}
+
+footer .footer-nav .active span {
+  color: #aaa;
+}
+
 .header-search {
   height: 16vw;
   background: #58bc58;
@@ -57,4 +69,40 @@ footer .footer-nav li span {
   outline: none;
   font-size: 4.8vw;
   padding: 0px 2.66667vw;
+}
+
+.header-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 11.73333vw;
+  width: 100%;
+  background: #58bc58;
+  display: flex;
+  justify-content: center;
+}
+
+.header-icon .content {
+  width: 93.33333vw;
+  height: 100%;
+  display: flex;
+}
+
+.header-icon .content .icon-left, .header-icon .content .icon-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 5.33333vw;
+}
+
+.header-icon .content .icon-right {
+  justify-content: flex-end;
+}
+
+.header-icon .content .title {
+  flex: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
 }

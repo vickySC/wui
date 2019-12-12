@@ -32,6 +32,15 @@ footer{
                 font-size: vw(12);
             }
         }
+        .active{
+            background: #fff;
+            a{
+                color: #aaa;
+            }
+            span{
+                color: #aaa;
+            }
+        }
     }
 }
 
@@ -60,3 +69,34 @@ footer{
 }
 
 // 头部（左中右布局布局的）
+.header-icon{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: vw(44);
+    width: 100%;
+    background: #58bc58;
+    display: flex;
+    justify-content: center;
+    .content{
+        width: vw(350);
+        height: 100%;
+        display: flex;
+        .icon-left,.icon-right{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            font-size: vw(20);
+        }
+        .icon-right{
+            justify-content: flex-end;
+        }
+        .title{
+            flex: 8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: normal;
+        }
+    }
+}
