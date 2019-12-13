@@ -1,5 +1,7 @@
 *{padding: 0;margin: 0;}
-;
+ul,li{
+    list-style: none;
+}
 @function vw($px){
     // 下面的375的数字，就是你的设计图是宽度是多少就写多少
     @return ($px / 375) * 100vw;
@@ -97,6 +99,38 @@ footer{
             align-items: center;
             justify-content: center;
             font-weight: normal;
+        }
+    }
+}
+
+// tab 切换
+.tab{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ccc;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    .tab-nav{
+        display: flex;
+        flex: 1;
+        background: #58bc58;
+        li{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .active{
+            background: #ccc;
+        }
+    }
+    .tab-content{
+        flex: 7;
+        overflow: hidden;
+        div{
+            width: 100%;
+            height: 100%;
         }
     }
 }
